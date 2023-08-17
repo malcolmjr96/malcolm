@@ -7,7 +7,7 @@ require 'sentry-ruby'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-module Malcolm
+module index
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.0
