@@ -21,5 +21,6 @@ module Malcolm
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
     Sentry.capture_message("test message yoop")
+    Sentry.capture_message("test message")
   end
 end
