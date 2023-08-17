@@ -13,3 +13,104 @@
  *= require_tree .
  *= require_self
  */
+ @font-face {
+    font-family: "Dangrek";
+    src: url("../fonts/Dangrek.ttf");
+  }
+
+
+* {
+    margin:0;
+    padding:0;
+}
+
+body {
+    display: flex;
+    background: linear-gradient(180deg, #000 0%, rgba(217, 217, 217, 0.00) 100%);
+    min-height: 100vh;
+}
+
+.side-wrapper {
+    height: 100%;
+    width: 25%;
+    text-align: center;
+}
+
+nav {
+    padding: 1.5rem;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.profile-avatar {
+    height: 190px;
+    width: 190px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.main-wrapper {
+    width: 100%;
+    min-height: 100%;
+    justify-content: center;
+}
+
+.header-section {
+    display: flex;
+    flex-direction: column;
+
+    flex-shrink: 0;
+    color: #000;
+    text-align: center;
+    font-family: Days One;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.main-section {
+
+}
+.main-content {
+    padding: 20px;
+}
+
+
+.side-container {
+    margin: 20px;
+}
+.side-social {
+    position: fixed;
+    bottom: 0;
+}
+
+.side-social-icons ul {
+    display: flex;
+    height: 100%;
+}
+.side-social-icons li {
+    display: flex;
+    width: 47px;
+    height: 47px;
+    padding: 10px;
+}
+article {
+    background-color: orange;
+}
+
+article h1 {
+    color: #000;
+}
+article p {
+    color: #000;
+    font-family: Dangrek;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
