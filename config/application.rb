@@ -1,13 +1,12 @@
 require_relative "boot"
 
 require "rails/all"
-require 'sentry-ruby'
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-module index
+module Malcolm
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.0
@@ -20,13 +19,5 @@ module index
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
-    begin
-      1 / 0
-    rescue ZeroDivisionError => exception
-      Sentry.capture_exception(exception)
-    end
-
-    Sentry.capture_message("test message yoop")
-    Sentry.capture_message("test message")
   end
 end
