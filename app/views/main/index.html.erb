@@ -1,4 +1,4 @@
-        <div class="side-wrapper w-2/12">
+        <div class="side-wrapper">
             <div class="side-container">
                 <div class="profile-container mb-6">
                    <%= image_tag image_path('176082.jpg') %>
@@ -42,7 +42,9 @@
                     </nav>
                 </div>
                 <div class="side-localtime"></div>
-                <div class="side-weatherinfo"></div>
+                <div class="side-weatherinfo">
+                    <span id="time"></span>
+                </div>
                 <div class="side-social">
                     <div class="side-social-icons">
                         <ul>
@@ -112,7 +114,5 @@
                         <p class="text-center text-white">Copyright @ 2023 Malcolm</p>
                     </div>
                 </div>
-                <script>
-                    myUndefinedFunction();
-                  </script>
             </div>
+        </div>
