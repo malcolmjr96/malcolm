@@ -7,3 +7,8 @@ tailwind.config = {
         }
     }
 };
+
+
+const myName = "Malcolm";
+const nameplaceholder = document.getElementById("firstName");
+nameplaceholder.innerHTML = myName;

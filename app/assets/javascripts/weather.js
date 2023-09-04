@@ -13,7 +13,7 @@ async function getTime() {
                 };
 
     // something like "Thursday, February 14, 2019, 02:55"
-    console.log(dt.toLocaleString('en-US', options));
+   // console.log(dt.toLocaleString('en-US', options));
     document.getElementById("time").innerHTML = dt.toLocaleString('en-US', options);
 };
 
