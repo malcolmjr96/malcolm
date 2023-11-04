@@ -19,5 +19,6 @@ module Malcolm
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+    config.logger = Logtail::Logger.create_default_logger("aZerz1q6GETKu1Cc6Hdd7QMg")
   end
 end
