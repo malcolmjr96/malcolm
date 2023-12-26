@@ -72,3 +72,8 @@ article p {
 article ul {
     list-style-type: square;
 }
+
+article input {
+    border: 1px solid #000;
+    display:block;
+}

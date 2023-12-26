@@ -56,6 +56,19 @@
                                                                                                                                           tristique consequat eu eget scelerisque mauris. At nibh tortor
                                                                                                                                           viverra tristique quam venenatis aliquet.
                 </p>
+                           <div class="contact-form">
+              <h1>Contact Us</h1>
+<%= form_for @contact, url: contacts_path, method: :post do |f| %>
+  <%= f.label :email %>
+  <%= f.text_field :email %>
+
+  <%= f.label :message %>
+  <%= f.text_area :message %>
+
+  <%= f.submit "Send Message" %>
+<% end %>
+
+            </div>
             </article>
         </div>
 
